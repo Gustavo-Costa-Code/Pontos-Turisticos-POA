@@ -28,7 +28,7 @@
 
 .main__block {
     background-color: #7987FF;
-    max-width: 450px;
+    max-width: 400px;
     height: 250px;
     width: 100%;
     margin: 100px 5px 20px;
@@ -45,7 +45,7 @@
 }
 
 .block__select {
-    width: 420px;
+    width: 380px;
     height: 25px;
     padding: 0 5px;
 }
@@ -76,7 +76,7 @@
 
 .main__guess h1 {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     margin: 0 35px;
 }
 
