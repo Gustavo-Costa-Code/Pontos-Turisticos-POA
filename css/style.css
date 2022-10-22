@@ -43,6 +43,7 @@
     color: white;
     font-size: 100px;
     width: 340px;
+    text-align: center;
 }
 
 .block__select {
@@ -95,7 +96,7 @@
     .guess {
         width: 70px;
         height: 70px;
-        font-size: 18px;
+        font-size: 12px;
         margin: 0 5px;
     }
     .main__guess h1 {
