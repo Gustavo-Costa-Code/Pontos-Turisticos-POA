@@ -42,6 +42,7 @@
 .block__text {
     color: white;
     font-size: 100px;
+    width: 350px;
 }
 
 .block__select {
