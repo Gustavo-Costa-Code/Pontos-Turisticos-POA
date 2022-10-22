@@ -17,7 +17,6 @@ for(i = 0; i < 30; i++){
 select.addEventListener('change', function(){
     var selecionada = this.options[this.selectedIndex];
     var value = selecionada.getAttribute('value');
-    console.log(guess)
     if(value == null){
         return false
     }
