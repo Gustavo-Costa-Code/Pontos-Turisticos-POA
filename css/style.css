@@ -93,13 +93,6 @@
     height: 240px;
 }
 
-.main__block img:hover {
-    animation-name: opacity;
-    animation-duration: 2s;
-    opacity: 0.3;
-    cursor: pointer;
-}
-
 .main__h1 {
     padding: 15px;
     font-size: 22px;
@@ -115,31 +108,7 @@
 
 .block__text {
     font-size: 100px;
-}
-
-.block__div {
-    position: fixed;
-    width: 80%;
-    height: 500px;
-    background-color: red;
-}
-
-.block__div h1{
-    float: right;
-    padding: 0 15px;
-    cursor: pointer;
-}
-
-.block__div p {
-    text-align: center;
-    padding: 100px 15px;
-}
-
-@keyframes opacity {
-    from {opacity: 1;}
-    to {opacity:0.3;}
-}
-  
+} 
 
 @media (max-width: 468px) {
     .guess {
