@@ -42,10 +42,7 @@ select.addEventListener('change', function(){
 
         blockImage.addEventListener('click', function(){
             guessBlock.innerHTML = `
-            <div class="block__text">
-                <h1>x</h1>
-                <p>oioioioioioiofjdfhkjngjfvnfjbjkfvbfkvjav</p>
-            </div>
+
             `
         })
     }
