@@ -16,8 +16,6 @@ for(i = 0; i < 30; i++){
     select.innerHTML += '<option value="'+pontos[i].nome+'">'+pontos[i].nome+'</option>'
 }
 
-console.log(guess.nome)
-
 select.addEventListener('change', function(){
     var selecionada = this.options[this.selectedIndex];
     var value = selecionada.getAttribute('value');
@@ -37,14 +35,6 @@ select.addEventListener('change', function(){
         <img class="block__image" src="${guess.imagem}" alt="imagem do ${guess.nome}"/>
         `
         main.innerHTML += ' <h1 class="main__h1">Você Acertou! O ponto é o '+guess.nome+'</h1>'
-
-        let blockImage = document.querySelector('.block__image')
-
-        blockImage.addEventListener('click', function(){
-            guessBlock.innerHTML = `
-
-            `
-        })
     }
     else {
         mainGuess.innerHTML += `
