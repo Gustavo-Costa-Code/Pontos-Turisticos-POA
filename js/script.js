@@ -7,12 +7,16 @@ let guessTipo = document.querySelector('.guess__tipo')
 let guessBlock = document.querySelector('.main__block')
 let main = document.querySelector('.main')
 
+
+
     let guess = Math.floor(Math.random() * (31 - 1));
     guess = pontos[guess]
 
 for(i = 0; i < 30; i++){
     select.innerHTML += '<option value="'+pontos[i].nome+'">'+pontos[i].nome+'</option>'
 }
+
+console.log(guess.nome)
 
 select.addEventListener('change', function(){
     var selecionada = this.options[this.selectedIndex];
@@ -29,11 +33,27 @@ select.addEventListener('change', function(){
             <div class="guess guess__tipo" style="background-color:green;">${pontos[this.selectedIndex-1].tipo}</div>
         </div>
         `
-        guessBlock.innerHTML = `<img class="block__image" src="${guess.imagem}" alt="imagem do ${guess.nome}"/>`
-        main.innerHTML += ' <h1 class="main__h1">Você Acertou</h1>'
+        guessBlock.innerHTML = `
+        <img class="block__image" src="${guess.imagem}" alt="imagem do ${guess.nome}"/>
+        `
+        main.innerHTML += ' <h1 class="main__h1">Você Acertou! O ponto é o '+guess.nome+'</h1>'
+
+        let blockImage = document.querySelector('.block__image')
+
+        blockImage.addEventListener('click', function(){
+            guessBlock.innerHTML = `
+            <div class="block__text">
+                <h1>x</h1>
+                <p>oioioioioioiofjdfhkjngjfvnfjbjkfvbfkvjav</p>
+            </div>
+            `
+        })
     }
     else {
         mainGuess.innerHTML += `
+        <div class="main__guess--name">
+            <h1>${pontos[this.selectedIndex-1].nome}</h1>
+        </div>
         <div class="main__guess">
             <div class="guess guess__rua">${pontos[this.selectedIndex-1].rua}</div>
             <div class="guess guess__bairro">${pontos[this.selectedIndex-1].bairro}</div>

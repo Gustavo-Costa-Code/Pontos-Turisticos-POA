@@ -82,15 +82,46 @@
     margin: 0 35px;
 }
 
+.main__block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .main__block img{
     width: 280px;
     height: 240px;
 }
 
-.main__h1 {
-    padding-top: 15px;
-    font-size: 30px;
+.main__block img:hover {
+    animation-name: opacity;
+    animation-duration: 2s;
+    opacity: 0.3;
+    cursor: pointer;
 }
+
+.main__h1 {
+    padding: 15px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.main__guess--name h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.block__text {
+    font-size: 100px;
+}
+
+@keyframes opacity {
+    from {opacity: 1;}
+    to {opacity:0.3;}
+}
+  
 
 @media (max-width: 468px) {
     .guess {

@@ -92,7 +92,7 @@ let pontos = [
         rua: 'Praça Montevidéu',
         bairro: 'Centro Histórico',
         ano: 1901,
-        tipo: 'Contrução',
+        tipo: 'Construção',
         imagem: './img/prefeitura-de-porto-alegre.png'
     },
     {
