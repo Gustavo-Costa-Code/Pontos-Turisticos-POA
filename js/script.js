@@ -6,6 +6,8 @@ let guessAno = document.querySelector('.guess__ano')
 let guessTipo = document.querySelector('.guess__tipo')
 let guessBlock = document.querySelector('.main__block')
 let main = document.querySelector('.main')
+let guessHow = document.querySelector('.button__how')
+let guessPlay = document.querySelector('.button__play')
 
 
 
@@ -94,4 +96,12 @@ select.addEventListener('change', function(){
     }
 
     }
+})
+
+guessHow.addEventListener('click', function(){
+    console.log('a')
+})
+
+guessPlay.addEventListener('click', function(){
+    console.log('b')
 })
