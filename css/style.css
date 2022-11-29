@@ -188,6 +188,25 @@
     margin: 0 auto;
 }
 
+.footer__button {
+    float: right;
+    margin: 10px;
+    color: white;
+    background-color: #7987FF;
+    border-radius: 100%;
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.button__text {
+    font-size: 18px;
+}
+
 @media (max-width: 468px) {
     .guess {
         width: 70px;

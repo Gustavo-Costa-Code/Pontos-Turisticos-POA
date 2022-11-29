@@ -6,6 +6,7 @@ let guessAno = document.querySelector('.guess__ano')
 let guessTipo = document.querySelector('.guess__tipo')
 let guessBlock = document.querySelector('.main__block')
 let main = document.querySelector('.main')
+let goToTop = document.querySelector('.footer__button')
 
 
 
@@ -34,7 +35,7 @@ select.addEventListener('change', function(){
         guessBlock.innerHTML = `
         <img class="block__image" src="${guess.imagem}" alt="imagem do ${guess.nome}"/>
         `
-        main.innerHTML += ' <h1 class="main__h1">Você Acertou! O ponto é o '+guess.nome+'</h1>'
+        main.innerHTML += ' <h1 class="main__h1">Você Acertou! O ponto é: '+guess.nome+'</h1>'
     }
     else {
         mainGuess.innerHTML += `
@@ -48,6 +49,8 @@ select.addEventListener('change', function(){
             <div class="guess guess__tipo">${pontos[this.selectedIndex-1].tipo}</div>
         </div>
     `
+    window.scrollTo(0, mainGuess.getBoundingClientRect().bottom)
+
 
     let guessRua = document.querySelectorAll('.guess__rua')
     let guessBairro = document.querySelectorAll('.guess__bairro')
@@ -94,4 +97,8 @@ select.addEventListener('change', function(){
     }
 
     }
+})
+
+goToTop.addEventListener('click', function(){
+    window.scrollTo(0, 0)
 })
